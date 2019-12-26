@@ -1,0 +1,10 @@
+
+<view class="animate_container">
+
+  <view class="dong_btn"  bindtap="onStart">动画</view>
+
+  <view animation="{{ani}}" class="dong_box">
+    家有余庆，庆余年-----言冰云
+  </view>
+
+</view>

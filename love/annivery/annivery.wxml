@@ -1,0 +1,38 @@
+<!--love/annivery/annivery.wxml-->
+<view class="container">
+  <view class="top_img">
+    <image src="../../style/img/top-bg.jpg" class="top_bg" bindtap="onTest"></image>
+  </view>
+
+  <scroll-view scroll-y="true">
+    <view class="day_line">
+      <view class="day_line_left">我们在一起已经</view>
+      <view class="day_line_center">{{beginLove}}</view>
+      <view class="day_line_right"> <text>days</text></view>
+    </view>
+
+    <view class="other_days_box">
+      <view class="other_days">
+        <view class="other_days_left">距离TA生日还有</view>
+        <view class="other_days_right">
+          <view class="day blue">
+            <text>{{taBirthday}}</text>
+            <text>days</text>
+          </view>
+        </view>
+      </view>
+      <view class="other_days">
+        <view class="other_days_left">距离WO生日还有</view>
+        <view class="other_days_right">
+          <view class="day">
+            <text>{{woBirthday}}</text>
+            <text>days</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <view style="height:100rpx;"></view>
+  <nav nav="{{navData}}" ></nav>
+</view>

@@ -1,0 +1,4 @@
+<!--components/testComponent/testComponent.wxml-->
+<view>
+  <view bindtap="onDown" class="out_class">组件全家桶中的引用的测试组件</view>
+</view>

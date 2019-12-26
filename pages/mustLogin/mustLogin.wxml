@@ -1,0 +1,29 @@
+<view class="container">
+
+  <view style="height:50rpx;"></view>
+  <view class="flex justify-content-center">
+    <image src="../../style/img/132.jpg" style="width:200rpx;" mode='widthFix'></image>
+  </view>
+
+  <view style="margin:40rpx;" wx:if="{{!hasUserInfo && canIUse}}">
+    <view style="border-top:1px solid #EDEDED"></view>
+    <view style="height:40rpx;"></view>
+    <view class="flex  font-size-7">
+      <text>访问本应用必须登录</text>
+    </view>
+    <view style="height:20rpx;"></view>
+    <view class="flex  font-size-9" style="color:#b4b4b4">
+      <text>●</text>
+      <text>　</text>
+      <text>获取您的微信头像和昵称</text>
+    </view>
+    <view style="height:80rpx;"></view>
+      <button type="primary" bindgetuserinfo="getuserinfo" open-type="getUserInfo" >确认登录</button>
+  </view>
+  <block wx:else>
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </block>
+
+</view>
+

@@ -1,0 +1,50 @@
+<!--pages/loveTime/loveTime.wxml-->
+<view class="loveTime_container">
+      
+  <!-- <view bindtap="uploadPic">上传图片</view> -->
+
+  <scroll-view scroll-x="true" class="body_box" scroll-left="{{scrollLeft}}" scroll-with-animation="true">
+    <view class="body_box_item">
+      <!-- <view bindtap="powerDrawer" data-status="open">wwwww展开上拉框</view> -->
+      <image src="../../style/img/1.jpg" class="item_pic"></image>
+
+      <view bindtap="powerDrawer" data-status="open" class="item_title">家宴</view>
+      <view class="item_desc overFlow2">时间是试金石：路遥知马力，日久见人心;时间是消炎药：日久淡酒劲，一笑抿恩仇;时间是忘情水：离恨两重天，快刀斩乱麻;时间是催老剂：昨日黑又浓，今日白又稀。时间是试金石：路遥知马力，日久见人心;时间是消炎药：日久淡酒劲，一笑抿恩仇;时间是忘情水：离恨两重天，快刀斩乱麻;时间是催老剂：昨日黑又浓，今日白又稀。时间是试金石：路遥知马力，日久见人心;时间是消炎药：日久淡酒劲，一笑抿恩仇;时间是忘情水：离恨两重天，快刀斩乱麻;时间是催老剂：昨日黑又浓，今日白又稀。</view>
+
+      <image src="../../style/img/xin.png" class="xin_pic"></image>
+
+    </view>
+    <view class="body_box_item">
+      <view bindtap="powerDrawer" data-status="open">wwwww展开上拉框</view>
+    </view>
+  </scroll-view>
+
+  
+  <view class="drawer_screen" bindtap="powerDrawer" data-status="close" wx:if="{{showModalStatus}}"></view>
+  <view animation="{{animationData}}"  class="drawer_attr_box" wx:if="{{showModalStatus}}">
+    <form bindsubmit="isok" report-submit="true">
+      <view class="drawer_top">
+        <view bindtap="powerDrawer" data-status="close">取消</view>
+        <view>编辑时光</view>
+        <view><button formType="submit">保存</button></view>
+      </view>
+      <view>家宴</view>
+
+      <view class="drawer_line">
+        <view class="drawer_line_left">
+          <image src="../../style/img/time.png"></image> <text>时间</text>
+        </view>
+        <input class='drawer_line_right' name="drawer_time" value="2019-11-01" placeholder="请输入时间"></input>
+      </view>
+      <view class="drawer_line">
+        <view class="drawer_line_left">
+          <image src="../../style/img/area.png"></image> <text>地点</text>
+        </view>
+        <input class='drawer_line_right' name="drawer_area" value="上海市 黄浦区" placeholder="请输入地址"></input>
+      </view>
+      <textarea name="drawer_desc" value="归读后感更好地是的会第十四广东省管is换个改好多个IG东方国际" height="60rpx;"></textarea>
+    </form>
+  </view>
+
+  <nav nav="{{navData}}"></nav>
+</view>
