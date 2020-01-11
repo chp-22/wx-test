@@ -1,9 +1,0 @@
-/* pages/loading/loading.wxss */
-.container{
-  width: 100%;
-  height: 100vh;
-}
-.container image{
-  width: 100%;
-  height: 100%;
-}

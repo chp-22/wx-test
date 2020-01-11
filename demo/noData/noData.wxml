@@ -1,9 +1,0 @@
-<view>
-
-  <view class="top_title">title</view>
-
-  <view class="noData_box">
-    <view>暂无数据</view>
-  </view>
-
-</view>

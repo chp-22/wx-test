@@ -1,6 +1,0 @@
-<!--demo/componentAll/componentAll.wxml-->
-<view>
-  <view bindtap="onTest" class="com_title">组件全家桶</view>
-
-  <testComponent out_class="txtColor" testData="{{testData}}"></testComponent>
-</view>

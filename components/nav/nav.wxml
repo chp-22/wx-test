@@ -1,7 +1,0 @@
-<!--components/nav/nav.wxml-->
-<view class="nav_container">
-  <view wx:for="{{nav}}" wx:key="index" class="nav_item" data-txt="{{item.txt}}" bindtap="onNav">
-    <image src="{{item.active==1?item.selectImg:item.img}}"></image>
-    <view style="color:{{item.active==1?'#FB4541':'#000'}}">{{item.txt}}</view>
-  </view>
-</view>
